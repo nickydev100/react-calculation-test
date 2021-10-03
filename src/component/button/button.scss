@@ -1,0 +1,43 @@
+.component-button {
+  display: inline-flex;
+  width: 25%;
+  flex: 1 0 auto;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0 , 0.15);          
+  button {
+    cursor: pointer;
+    background-color: #eeeeee;
+    border: 0;
+    font-size: 2rem;
+    margin: 0 1px 0 0;
+    flex: 1 0 auto;
+    padding: 0;    
+    &:hover {      
+      background-color: white;
+    }
+  }
+  &:last-child {
+    button {
+      margin-right: 0;
+    }
+  }  
+}
+
+.component-button.wide {
+  width: 50%;
+}
+
+
+.component-button.orange button {
+  background-color: #f5923e;
+  color: white;
+  &:hover {
+    background-color: #FFA500;
+  }
+}
+.component-button.blue button {  
+  color: white;
+  background-color: #03a9d0;
+  &:hover {
+    background-color: #03a9f4;
+  }
+}
